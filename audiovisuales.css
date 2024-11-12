@@ -1,0 +1,50 @@
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 33vw;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*------------------------------------------------------------*/
+
+/* Estilo general del carrusel */
+.carrusel {
+    width: 100%;
+    height: 400px; /* Puedes ajustar la altura según lo que necesites */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Contenedor de las imágenes */
+.imagenes {
+    display: flex;
+    width: 400%; /* Cuatro veces el tamaño de un solo bloque de imagen */
+    animation: desplazamiento 16s infinite; /* Duración de la animación */
+}
+
+/* Estilo para las imágenes */
+.imagenes img {
+    width: 25%; /* Cada imagen ocupará 25% del contenedor */
+    height: 100%;
+    object-fit: cover; /* Para que las imágenes se adapten correctamente */
+}
+
+/* Animación de desplazamiento */
+@keyframes desplazamiento {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-25%); }
+    50% { transform: translateX(-50%); }
+    75% { transform: translateX(-75%); }
+    100% { transform: translateX(0); }
+}

@@ -1,0 +1,20 @@
+
+table {
+
+    
+    font-size: 1.5rem;
+    border-radius: 15px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    color: aliceblue;
+}
+
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
+    background-color: rgb(48, 48, 48);
+    color: aliceblue;
+}
